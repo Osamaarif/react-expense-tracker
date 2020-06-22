@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from './globalState';
+import {GlobalContext} from './globalState';
 
-export const Transaction = ({ transaction }) => {
+const Transaction = ({ transaction }) => {
 
     const { delTransaction } = useContext(GlobalContext);
     const sign = transaction.transactionAmount > 0 ? '+':'-';
@@ -19,3 +19,5 @@ export const Transaction = ({ transaction }) => {
         </li>
     );
 }
+
+export default Transaction ;

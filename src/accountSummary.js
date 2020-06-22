@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from './globalState';
+import {GlobalContext} from './globalState';
 
-export const AccountSummary = () => {
+const AccountSummary = () => {
     
     const { transaction } = useContext(GlobalContext);
     const transactionAmount = transaction.map(transaction => transaction.transactionAmount);
@@ -31,3 +31,5 @@ export const AccountSummary = () => {
         </div>
     );
 }
+
+export default AccountSummary ;

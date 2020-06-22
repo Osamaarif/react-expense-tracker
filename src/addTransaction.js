@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
-import { GlobalContext } from './globalState';
+import {GlobalContext} from './globalState';
 
-export const AddTransaction = () => {
+const AddTransaction = () => {
 
     const [ description, setDescription ]=useState('');
     const [ transactionAmount, setTransactionAmount ]=useState('');
@@ -51,3 +51,5 @@ export const AddTransaction = () => {
         </div>
     );
 }
+
+export default AddTransaction ;

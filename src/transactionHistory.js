@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from './globalState';
-import { Transaction} from './transaction';
+import {GlobalContext}  from './globalState';
+import Transaction from './transaction';
 
-export const TransactionHistory = () => {
+const TransactionHistory = () => {
 
     const { transaction } = useContext(GlobalContext);
 
@@ -17,3 +17,5 @@ export const TransactionHistory = () => {
         </div>
     );
 }
+
+export default TransactionHistory ;
